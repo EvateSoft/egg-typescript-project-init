@@ -14,6 +14,7 @@
     "egg-cors": "^2.0.0",
     "egg-mongoose": "^2.1.1",
     "egg-mysql": "^3.0.0",
+    "egg-qingger-typeorm": "git+ssh://git@github.com/EvateSoft/egg-qingger-typeorm.git",
     "egg-redis": "^1.0.2",
     "egg-scripts": "^2.1.0",
     "egg-security": "^2.0.0",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
+    "@types/chai": "^4.1.1",
     "@types/commander": "^2.12.2",
     "@types/connect": "^3.4.31",
     "@types/faker": "^4.1.2",
@@ -50,9 +52,11 @@
     "@types/koa": "^2.0.43",
     "@types/koa-router": "^7.0.27",
     "@types/lodash": "^4.14.92",
+    "@types/mocha": "^2.2.46",
     "@types/moment": "^2.13.0",
     "@types/mongoose": "^4.7.32",
     "@types/node": "^8.5.2",
+    "@types/power-assert": "^1.4.29",
     "autod": "^3.0.1",
     "autod-egg": "^1.0.0",
     "dump": "^1.0.1",
@@ -66,7 +70,11 @@
     "gulp-typescript": "^3.2.3",
     "tslint": "^5.8.0",
     "typescript": "^2.6.2",
-    "webstorm-disable-index": "^1.2.0"
+    "webstorm-disable-index": "^1.2.0",
+    "mocha": "^4.1.0",
+    "mocha-typescript": "^1.1.12",
+    "mochawesome": "^3.0.1",
+    "power-assert": "^1.4.4"
   },
   "engines": {
     "node": ">=8.9.0"
@@ -76,7 +84,7 @@
     "stop": "egg-scripts stop",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
-    "test": "npm run lint -- --fix && npm run test-local",
+    "test": "npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "tslint .",
