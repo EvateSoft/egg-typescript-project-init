@@ -1,7 +1,7 @@
 {
-  "name": "eggSample",
+  "name": "egg-typescript-project-init",
   "version": "1.0.0",
-  "description": "egg.js Samples",
+  "description": "egg.js Project With Typescript",
   "private": true,
   "dependencies": {
     "area-data": "^1.0.0",

@@ -1,6 +1,6 @@
-# eggSample
+# egg-typescript-project-init
 
-egg.js Samples
+egg.js Project With Typescript
 
 ## QuickStart
 
