@@ -10,3 +10,11 @@ run/
 .DS_Store
 *.sw*
 *.un~
+app/**/*.js
+app/**/*.js.map
+config/**/*.js
+config/**/*.js.map
+test/**/*.js
+test/**/*.js.map
+lib/**/*.js
+lib/**/*.js.map
