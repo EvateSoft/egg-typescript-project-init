@@ -6,7 +6,7 @@
  */
 
 export const mongoose = {
-    enable : false,
+    enable : true,
     package : 'egg-mongoose'
 };
 

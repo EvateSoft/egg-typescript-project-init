@@ -6,6 +6,7 @@
  */
 
 import BaseController from "./base";
+import {Photo} from "../model/mysql/entity/Photo";
 
 export default class HomeController extends BaseController {
 
@@ -14,7 +15,12 @@ export default class HomeController extends BaseController {
      * @return {Promise<void>}
      */
     public async index() {
-        console.log(this.config.env);
+        const photo = new Photo();
+        photo.name = 'P1';
+        photo.fileName = 'p1.png';
+        photo.isPublished = true;
+        photo.views = 0;
+        await this.app.qinggerTypeorm.manager.save(photo);
         this.respond({
             message:"hello egg.",
         });
